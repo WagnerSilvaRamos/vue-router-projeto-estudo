@@ -63,8 +63,7 @@ export default {
     checkForm: function(e) {
       if (this.newUser.username && this.newUser.password) {
         return true;
-         this.$router.push({path: '/dashboard'});
-
+        this.$router.push({ path: "/dashboard" });
       }
 
       this.errors = [];
@@ -78,9 +77,6 @@ export default {
 
       e.preventDefault();
 
-
-
-
       //(this.newUser.username = ""), (this.newUser.password = "");
     },
 
@@ -91,8 +87,6 @@ export default {
       store.user = this.newUser.username;
       const redirectPath = this.$route.query.redirect || "/";
       this.$router.push(redirectPath);
-
-
     }
   }
 };

@@ -24,8 +24,23 @@ html {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-ul.pagination li{ padding: 0.5rem 0.8rem; background: #686eee; text-align: center;font-family: 'Helvetica Neue', sans-serif; margin: 0 0.2rem; border-radius: 0.3rem; color: #ff}
-.pagination li.active{ padding: 0.5rem 0.8rem; background: #222cf0; text-align: center;font-family: 'Helvetica Neue', sans-serif;font-weight: bold;color: #fff}
+ul.pagination li {
+  padding: 0.5rem 0.8rem;
+  background: #686eee;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0 0.2rem;
+  border-radius: 0.3rem;
+  color: #ff;
+}
+.pagination li.active {
+  padding: 0.5rem 0.8rem;
+  background: #222cf0;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
 #app {
 }
 .navbar {
@@ -49,6 +64,7 @@ a.navbar-brand img {
 }
 #main {
   margin: 8rem auto 0 auto;
+  max-width: 100%;
   width: 100%;
 }
 .router-link-active,
@@ -139,6 +155,14 @@ p {
   font-weight: 300;
 }
 
+.apexcharts-canvas { margin: 0 auto!important;}
+
+#chart_columns{ height: auto; max-height: 100%}
+
+#chart_lines{ margin-top: 3rem}
+
+#chart_columns{ margin-top: 6rem; max-width: 100%; width: 100%}
+
 @media (max-width: 500px) {
   a.navbar-brand img {
     padding-right: 1rem;
@@ -151,5 +175,17 @@ p {
     background: #49ce3b;
     padding: 0.25rem 0.5rem;
   }
+
+
+
+    .apexcharts-canvas { margin: 0 auto!important;}
+  #chart_columns .apexcharts-canvas { height: 400px; max-height: 100%}
+  #chart_polar{ margin-top: -3rem}
+}
+
+
+@media (max-width: 991px) {
+  #chart_lines{ margin-top: 0}
+
 }
 </style>
